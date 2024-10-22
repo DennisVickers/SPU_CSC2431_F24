@@ -1,3 +1,0 @@
-C:/Users/denni/OneDrive - Seattle Pacific University/Courses/2023 Autumn/CSC 2431/Code/Module 3/Stack/cmake-build-debug/CMakeFiles/Stack.dir
-C:/Users/denni/OneDrive - Seattle Pacific University/Courses/2023 Autumn/CSC 2431/Code/Module 3/Stack/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/denni/OneDrive - Seattle Pacific University/Courses/2023 Autumn/CSC 2431/Code/Module 3/Stack/cmake-build-debug/CMakeFiles/rebuild_cache.dir
