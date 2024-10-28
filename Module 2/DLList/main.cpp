@@ -1,29 +1,35 @@
-#include "DoublyLinkedList.h"
 #include <iostream>
+#include "doublelinklist.h"
 using namespace std;
 
 int main() {
+  doubleLinkList list;
 
-    DoublyLinkedList list;
+  /* Build a list*/
+  cout << "\nOriginal List:\n";
+  list.prepend(10);
+  list.prepend(20);
+  list.append(30);
+  list.append(40);
+  list.showList(); // Output should be "20, 10, 30, 40"
+  
+  /* update the list */
+  cout << "Remove the head of the list\n";
+  list.remove(20);
+  list.showList();
+  
+  /* update the list */
+  cout << "Remove the tail of the list\n";
+  list.remove(40);
+  list.showList();
 
-    list.prepend(10);
-    list.prepend(20);
-    list.prepend(30);
-    list.showList();
+  /* find a node in the list */
+  int searchVal = 30;
+  if (list.search(searchVal)) {
+    cout << "Element holding " << searchVal << " found\n";
+  } else {
+    cout << "Element holding " << searchVal << " not found\n";
+  }
 
-    list.append(40);
-    list.append(50);
-    list.append(60);
-    list.showList();
-
-    list.deleteNode(60);
-    list.showList();
-
-    if (list.search(30)) {
-        cout << "Element found" << endl;
-    } else {
-        cout << "Element not found" << endl;
-    }
-
-    return 0;
+  return 0;
 }
