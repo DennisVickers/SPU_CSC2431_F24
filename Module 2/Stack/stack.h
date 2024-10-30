@@ -1,25 +1,22 @@
-#ifndef STACK_STACK_H
-#define STACK_STACK_H
+#pragma once
 
 // Node class to represent each element in the stack
 struct Node {
    int data;
-   Node *next;
+   Node* next;
    Node(int data);
 };
 
 // Stack class using a linked list
 class Stack {
 private:
-   Node *top;
+   Node* top;
 public:
    Stack();
    ~Stack();
    void push(int data);
    int pop();
    int peek() const;
-   int search(int data) const;
+   int fromTop(int data) const;
    bool isEmpty() const;
 };
-
-#endif //STACK_STACK_H

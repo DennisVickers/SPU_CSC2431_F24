@@ -16,7 +16,7 @@ int main() {
    cout << "Top element is " << stack.peek() << endl;
 
    int find = 20;
-   int found = stack.search(find);
+   int found = stack.fromTop(find);
    if (found >= 0) {
       cout << "Value " << find << " found at " << found << endl;
    } else {

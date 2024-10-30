@@ -10,9 +10,9 @@ Stack::Stack() : top(nullptr) {}
 
 // Stack Destructor
 Stack::~Stack() {
-   Node *current = top;
+   Node* current = top;
    while (current != nullptr) {
-      Node *next = current->next;
+      Node* next = current->next;
       delete current;
       current = next;
    }
@@ -32,7 +32,7 @@ int Stack::pop() {
       return -1;  // Indicate an error
    }
    int poppedData = top->data;
-   Node *temp = top;
+   Node* temp = top;
    top = top->next;
    delete temp;
    return poppedData;
@@ -48,7 +48,7 @@ int Stack::peek() const {
 }
 
 // Search for an element
-int Stack::search(int data) const {
+int Stack::fromTop(int data) const {
    int location = 0;
    Node* current = top;
    while (current != nullptr) {
