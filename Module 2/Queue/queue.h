@@ -1,27 +1,23 @@
-#ifndef QUEUE_QUEUE_H
-#define QUEUE_QUEUE_H
+#pragma once
 
 // Node structure for Linked List
 struct Node {
-   int data;
-   Node *next;
-   Node(int data);
+   int payload;
+   Node* next;
+   Node(int);
 };
 
 class Queue {
    private:
-      Node *front;
-      Node *rear;
+      Node* front;
+      Node* back;
       int size;
    public:
       Queue();
       ~Queue();
-      void enqueue(int data);
+      void enqueue(int);
       int dequeue();
       int peek() const;
       bool isEmpty() const;
       int getSize() const;
 };
-
-
-#endif //QUEUE_QUEUE_H
